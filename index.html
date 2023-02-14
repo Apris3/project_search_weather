@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="language" content="Spanish">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    h2{
+      padding: 10px;
+      text-align: center;
+      background-color: rgb(199, 195, 195);
+    }
+  
+    .cityName{
+      padding: 5px;
+    }
+
+   
+    main{
+      background-size:cover;
+      display: grid;
+      text-align: center;
+      margin: 20px auto ;
+    }
+   
+    .city,
+    .searchButton{
+      padding: 5px;
+      font-size: 20px;
+    }
+    .city{
+      width: 40%;
+      border: none;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .searchButton{
+      width: 60px;
+      border: none;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+
+    .container{
+      margin: 10px auto;
+      max-width: 50%;
+      min-height: 300px; 
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .img{
+      width: 200px;
+    }
+    .date,
+    .img,
+    .maxtemp,
+    .mintemp,
+    .desc,
+    .windspeed{
+      color: white;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .cityName{
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('./asset/sky.jpg');
+      background-size: cover;
+      position: relative;
+      min-height: 105vh;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    footer{
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      background-color: rgb(199, 195, 195);
+      bottom: 0px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    footer > p{
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h2>SEARCH WEATHER</h2>
+  </header>
+  <main>
+      <div class="inputCity">
+        <input type="text" class="city" placeholder="Input Your City...">
+        <button type="button" name="button" class="searchButton">Cari</button>
+      </div>
+      <div class="cityName">
+      </div>
+      <div class="showData">
+       </div>
+  </main>
+  <footer>
+    <p>&copy : apris_coding</p>
+  </footer>
+  <script src="/src/app.js" type="module"></script>
+</body>
+</html>
