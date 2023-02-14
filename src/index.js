@@ -53,7 +53,9 @@ const main = () =>{
 
      
       container.append(contain);
-    });
+    }).catch(error =>{
+      alert(error)
+    })
   });
   
 };
